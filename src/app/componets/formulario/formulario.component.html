@@ -1,0 +1,29 @@
+<form (ngSubmit)="guardar(fomrulario)" #fomrulario="ngForm" class="form-container">
+    <div class="form-group">
+      <label for="id">Ingrese id editorial</label>
+      <input type="text" placeholder="Ej: 1234567890" name="id" [(ngModel)]="id" id="id" class="form-control" />
+    </div>
+  
+    <div class="form-group">
+      <label for="nombre">Ingrese titulo</label>
+      <input type="text" placeholder="Ej: Juan " name="titulo" [(ngModel)]="titulo" id="titulo" class="form-control" />
+    </div>
+  
+    <div class="form-group">
+      <label for="anio">Ingrese valoracion</label>
+      <input type="number" placeholder="Ej: 2024" name="valoracion" [(ngModel)]="valoracion" id="valoracion" class="form-control" />
+    </div>
+  
+    <div class="form-group">
+      <label for="autor">Ingrese opiniones</label>
+      <input type="text" placeholder="Ej: Juan Pérez" name="opiniones" [(ngModel)]="Nopiniones" id="opiniones" class="form-control" />
+    </div>
+  
+    <div class="form-group">
+      <label for="imagen">Ingrese link de la imagen</label>
+      <input type="text" placeholder="Ej: https://example.com/imagen.jpg" name="imagen" [(ngModel)]="imagen" id="imagen" class="form-control" />
+    </div>
+  
+    <button type="submit" class="btn-submit">Enviar</button>
+  </form>
+  

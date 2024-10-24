@@ -1,0 +1,12 @@
+<div class="row">
+  <div *ngFor="let item of peliculas" class="col-md-3">
+    <div class="thumbnail">
+      <img [src]="item.imagen" alt="{{ item.titulo }}" style="width:100%">
+      <div class="caption">
+        <h2>{{ item.titulo }}</h2>
+        <p>Valoración: {{ item.valoracion }}/10</p>
+        <p>Opiniones positivas: {{ item.opiniones.opiniones_positivas.cantidad }}</p>
+      </div>
+    </div>
+  </div>
+</div>

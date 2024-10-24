@@ -1,0 +1,19 @@
+<form (ngSubmit)="editar(formulario)" #formulario="ngForm">
+    <label>Ingrese id título</label>
+    <input type="text" placeholder="Ej: 1234567890" name="id" [(ngModel)]="id">
+  
+    <label>Ingrese título</label>
+    <input type="text" placeholder="Ej: Juan Pérez" name="titulo" [(ngModel)]="titulo">
+  
+    <label>Ingrese valoración</label>
+    <input type="number" placeholder="Ej: 25" name="valoracion" [(ngModel)]="valoracion">
+  
+    <label>Ingrese opiniones</label>
+    <input type="text" placeholder="Ej: Juan Pérez" name="opiniones" [(ngModel)]="opiniones">
+  
+    <label>Ingrese link de la imagen</label>
+    <input type="text" placeholder="Ej: http://..." name="imagen" [(ngModel)]="imagen">
+  
+    <button type="submit">Enviar</button>
+  </form>
+  
